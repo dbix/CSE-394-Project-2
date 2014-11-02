@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74291D621A0647C500DC0DCF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74291D611A0647C500DC0DCF /* main.cpp */; };
+		74291D901A06498800DC0DCF /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74291D811A06498800DC0DCF /* Card.cpp */; };
+		74291D911A06498800DC0DCF /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74291D831A06498800DC0DCF /* Deck.cpp */; };
+		74291D921A06498800DC0DCF /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74291D851A06498800DC0DCF /* Game.cpp */; };
+		74291D931A06498800DC0DCF /* GenericPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74291D871A06498800DC0DCF /* GenericPlayer.cpp */; };
+		74291D941A06498800DC0DCF /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74291D891A06498800DC0DCF /* Hand.cpp */; };
+		74291D951A06498800DC0DCF /* House.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74291D8B1A06498800DC0DCF /* House.cpp */; };
+		74291D961A06498800DC0DCF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74291D8D1A06498800DC0DCF /* main.cpp */; };
+		74291D971A06498800DC0DCF /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74291D8E1A06498800DC0DCF /* Player.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +31,22 @@
 
 /* Begin PBXFileReference section */
 		74291D5E1A0647C500DC0DCF /* CSE 394 Project 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CSE 394 Project 2"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74291D611A0647C500DC0DCF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		74291D801A06498800DC0DCF /* blackjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blackjack.h; sourceTree = "<group>"; };
+		74291D811A06498800DC0DCF /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		74291D821A06498800DC0DCF /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		74291D831A06498800DC0DCF /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		74291D841A06498800DC0DCF /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		74291D851A06498800DC0DCF /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		74291D861A06498800DC0DCF /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		74291D871A06498800DC0DCF /* GenericPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GenericPlayer.cpp; sourceTree = "<group>"; };
+		74291D881A06498800DC0DCF /* GenericPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericPlayer.h; sourceTree = "<group>"; };
+		74291D891A06498800DC0DCF /* Hand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hand.cpp; sourceTree = "<group>"; };
+		74291D8A1A06498800DC0DCF /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		74291D8B1A06498800DC0DCF /* House.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = House.cpp; sourceTree = "<group>"; };
+		74291D8C1A06498800DC0DCF /* House.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = House.h; sourceTree = "<group>"; };
+		74291D8D1A06498800DC0DCF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		74291D8E1A06498800DC0DCF /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		74291D8F1A06498800DC0DCF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +79,22 @@
 		74291D601A0647C500DC0DCF /* CSE 394 Project 2 */ = {
 			isa = PBXGroup;
 			children = (
-				74291D611A0647C500DC0DCF /* main.cpp */,
+				74291D801A06498800DC0DCF /* blackjack.h */,
+				74291D811A06498800DC0DCF /* Card.cpp */,
+				74291D821A06498800DC0DCF /* Card.h */,
+				74291D831A06498800DC0DCF /* Deck.cpp */,
+				74291D841A06498800DC0DCF /* Deck.h */,
+				74291D851A06498800DC0DCF /* Game.cpp */,
+				74291D861A06498800DC0DCF /* Game.h */,
+				74291D871A06498800DC0DCF /* GenericPlayer.cpp */,
+				74291D881A06498800DC0DCF /* GenericPlayer.h */,
+				74291D891A06498800DC0DCF /* Hand.cpp */,
+				74291D8A1A06498800DC0DCF /* Hand.h */,
+				74291D8B1A06498800DC0DCF /* House.cpp */,
+				74291D8C1A06498800DC0DCF /* House.h */,
+				74291D8D1A06498800DC0DCF /* main.cpp */,
+				74291D8E1A06498800DC0DCF /* Player.cpp */,
+				74291D8F1A06498800DC0DCF /* Player.h */,
 			);
 			path = "CSE 394 Project 2";
 			sourceTree = "<group>";
@@ -118,7 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74291D621A0647C500DC0DCF /* main.cpp in Sources */,
+				74291D971A06498800DC0DCF /* Player.cpp in Sources */,
+				74291D931A06498800DC0DCF /* GenericPlayer.cpp in Sources */,
+				74291D921A06498800DC0DCF /* Game.cpp in Sources */,
+				74291D951A06498800DC0DCF /* House.cpp in Sources */,
+				74291D911A06498800DC0DCF /* Deck.cpp in Sources */,
+				74291D961A06498800DC0DCF /* main.cpp in Sources */,
+				74291D901A06498800DC0DCF /* Card.cpp in Sources */,
+				74291D941A06498800DC0DCF /* Hand.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
