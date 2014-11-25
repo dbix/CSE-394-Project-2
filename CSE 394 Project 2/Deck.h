@@ -3,6 +3,8 @@
 // Copyright (c) 2014 ___DEREKBIXLER___. All rights reserved.
 //
 
+#include <iostream>
+
 #include "blackjack.h"
 #include "Card.h"
 #include "GenericPlayer.h"
@@ -20,8 +22,10 @@ public:
     void populate();
     void shuffle();
     void deal(Hand &hand);
+    void dealOne(Hand &hand);
     void additionalCards(GenericPlayer &gp);
     int remaining();
+    void printDeck();
 
 };
 

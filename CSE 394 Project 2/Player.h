@@ -14,10 +14,12 @@
 
 class Player : public GenericPlayer {
 private:
+    bool is_hitting = true;
 	int *n;
 public:
     Player(std::string name);
     virtual bool isHitting() const;
+    void setHitting(bool hitting);
     void win();
     void lose();
     void push();

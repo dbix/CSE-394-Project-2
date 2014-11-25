@@ -7,19 +7,20 @@
 
 using namespace std;
 
-GenericPlayer::GenericPlayer(string name) : Hand()
-{
-	playerName = name;
-}
-
 bool GenericPlayer::isBusted() const
 {
-    return false;
+    return busted;
+}
+
+void GenericPlayer::setBusted(bool b)
+{
+    busted = b;
+    if (busted) bust();
 }
 
 void GenericPlayer::bust() const
 {
-    cout << this << " has busted.\n";
+    cout << *this << " has busted.\n";
 }
 
 string GenericPlayer::getPlayerName() const

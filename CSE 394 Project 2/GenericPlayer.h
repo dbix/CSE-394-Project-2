@@ -12,18 +12,22 @@
 
 class GenericPlayer : public Hand {
 private:
-    Hand hand;
-    bool busted;
 protected:
+    Hand hand;
+    bool busted = false;
     std::string playerName;
 public:
-    GenericPlayer(std::string name);
+    GenericPlayer() {};
+    GenericPlayer(std::string name) : Hand() {
+        playerName = name;
+    }
     virtual bool isHitting() const = 0;
     bool isBusted() const;
     void bust() const;
     Hand getHand();
     virtual std::string getPlayerName() const;
     void setName(std::string name);
+    void setBusted(bool is_busted);
 	friend std::ostream& operator<<(std::ostream& os, const GenericPlayer& dt);
 };
 

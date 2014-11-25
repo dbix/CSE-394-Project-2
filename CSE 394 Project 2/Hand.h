@@ -15,6 +15,7 @@
 class Hand {
 private:
     std::vector<Card> handVector;
+    int number_of_aces;
 public:
     Hand();
     //Hand(std::initializer_list<Card> list);
@@ -23,8 +24,8 @@ public:
     void clear();
     int getTotal();
     virtual Hand getHand();
-    Card get(int index);
-
+    Card* get(unsigned long index);
+    unsigned long size();
 };
 
 #endif //__Hand_H_

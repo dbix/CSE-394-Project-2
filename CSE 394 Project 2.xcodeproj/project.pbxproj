@@ -79,24 +79,32 @@
 		74291D601A0647C500DC0DCF /* CSE 394 Project 2 */ = {
 			isa = PBXGroup;
 			children = (
-				74291D801A06498800DC0DCF /* blackjack.h */,
+				7445B7571A25158F00B7062F /* include */,
 				74291D811A06498800DC0DCF /* Card.cpp */,
-				74291D821A06498800DC0DCF /* Card.h */,
 				74291D831A06498800DC0DCF /* Deck.cpp */,
-				74291D841A06498800DC0DCF /* Deck.h */,
 				74291D851A06498800DC0DCF /* Game.cpp */,
-				74291D861A06498800DC0DCF /* Game.h */,
 				74291D871A06498800DC0DCF /* GenericPlayer.cpp */,
-				74291D881A06498800DC0DCF /* GenericPlayer.h */,
 				74291D891A06498800DC0DCF /* Hand.cpp */,
-				74291D8A1A06498800DC0DCF /* Hand.h */,
 				74291D8B1A06498800DC0DCF /* House.cpp */,
-				74291D8C1A06498800DC0DCF /* House.h */,
 				74291D8D1A06498800DC0DCF /* main.cpp */,
 				74291D8E1A06498800DC0DCF /* Player.cpp */,
-				74291D8F1A06498800DC0DCF /* Player.h */,
 			);
 			path = "CSE 394 Project 2";
+			sourceTree = "<group>";
+		};
+		7445B7571A25158F00B7062F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				74291D801A06498800DC0DCF /* blackjack.h */,
+				74291D821A06498800DC0DCF /* Card.h */,
+				74291D841A06498800DC0DCF /* Deck.h */,
+				74291D861A06498800DC0DCF /* Game.h */,
+				74291D881A06498800DC0DCF /* GenericPlayer.h */,
+				74291D8A1A06498800DC0DCF /* Hand.h */,
+				74291D8C1A06498800DC0DCF /* House.h */,
+				74291D8F1A06498800DC0DCF /* Player.h */,
+			);
+			name = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +284,7 @@
 				74291D671A0647C500DC0DCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

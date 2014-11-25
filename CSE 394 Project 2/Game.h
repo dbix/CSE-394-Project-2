@@ -13,9 +13,13 @@
 
 
 class Game {
+private:
+    std::vector<Player> players;
 public:
     Game();
     void play();
+    int playersLeft();
+    void displayPlayerScore(GenericPlayer p);
 };
 
 

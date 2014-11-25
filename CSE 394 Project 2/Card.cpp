@@ -16,16 +16,7 @@ bool Card::isFaceUp() const
 
 void Card::flip()
 {
-    faceUp = true;
-}
-
-int Card::getValue() const
-{
-    if (faceUp) {
-        return rank;
-    } else {
-        return -1;
-    }
+    faceUp = !faceUp;
 }
 
 Rank const &Card::getRank()
@@ -36,4 +27,56 @@ Rank const &Card::getRank()
 Suit const &Card::getSuit()
 {
     return suit;
+}
+
+std::string Card::getRankSuit()
+{
+    if (!faceUp) {
+        return "XX";
+    } else {
+        std::string s;
+        if (rank == 11) {
+            s = "J";
+        } else if (rank == 12) {
+            s = "Q";
+        } else if (rank == 13) {
+            s = "K";
+        } else if (rank == 14) {
+            s = "A";
+        } else {
+            s = std::to_string(rank);
+        }
+        
+        switch (suit) {
+            case CLUB:
+                s+="c";
+                break;
+            case DIAMOND:
+                s+="d";
+                break;
+            case HEART:
+                s+="h";
+                break;
+            case SPADE:
+                s+="s";
+                break;
+        }
+        return s;
+    }
+}
+
+int Card::valueOfRank(Rank r)
+{
+    int val_rank = (int) r;
+    if (val_rank == 11) {
+        return 10;
+    } else if (val_rank == 12) {
+        return 10;
+    } else if (val_rank == 13) {
+        return 10;
+    } else if (val_rank == 14) {
+        return 11;
+    } else {
+        return val_rank;
+    }
 }

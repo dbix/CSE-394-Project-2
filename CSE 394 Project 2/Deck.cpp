@@ -79,10 +79,23 @@ void Deck::shuffle()
 
 void Deck::deal(Hand &hand)
 {
-    hand.add(*deckVector.back());
+    Card c1 = *deckVector.back();
+    hand.add(c1);
     deckVector.pop_back();
     deckVector.shrink_to_fit();
-    shuffle();
+    
+    Card c2 = *deckVector.back();
+    hand.add(c2);
+    deckVector.pop_back();
+    deckVector.shrink_to_fit();
+}
+
+void Deck::dealOne(Hand &hand)
+{
+    Card c = *deckVector.back();
+    hand.add(c);
+    deckVector.pop_back();
+    deckVector.shrink_to_fit();
 }
 
 void Deck::additionalCards(GenericPlayer &gp)
@@ -94,4 +107,13 @@ int Deck::remaining()
 {
     deckVector.shrink_to_fit();
     return (int) deckVector.size();
+}
+
+void Deck::printDeck()
+{
+    
+    for (int i = 0; i < DECK_SIZE; i++) {
+        std::cout << i+1 << " " << deckVector[i]->getRankSuit() << ", valueOfRank=" << Card::valueOfRank(deckVector[i]->getRank()) << "\n";
+    }
+    std::cout << std::endl;
 }

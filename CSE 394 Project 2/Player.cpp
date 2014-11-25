@@ -7,11 +7,21 @@
 
 Player::Player(std::string name) : GenericPlayer(name)
 {
+    is_hitting = true;
 }
 
 bool Player::isHitting() const
 {
-    return false;
+    if (isBusted()) {
+        return false;
+    } else {
+        return is_hitting;
+    }
+}
+
+void Player::setHitting(bool hitting)
+{
+    is_hitting = hitting;
 }
 
 void Player::win()
